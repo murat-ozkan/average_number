@@ -1,14 +1,15 @@
 //? ************AVERAGE NUMBER***********
 
-let numberToplam = +prompt("Toplamda kaç sayının ortalamasını alacaksınız?:");
-let number1 = +prompt("1. Sayıyı giriniz:");
-let number2 = +prompt("2. Sayıyı giriniz:");
-let number3 = +prompt("3. Sayıyı giriniz:");
+let totalNumber = +prompt("How many numbers will you average?:");
+let sum = 0;
+let average = 0;
 
-alert(
-  `Bu ${numberToplam} sayının ortalaması:
-  ${(number1 + number2 + number3) / numberToplam}`
-);
-// alert(`${number1 + number2}`);
+for (i = 1; i <= totalNumber; i++) {
+  let newNumber = +prompt("Sayıyı giriniz:");
+  sum = sum + newNumber;
+}
+average = sum / totalNumber;
 
-//? ************AVERAGE NUMBER***********
+alert(`The average of these ${totalNumber} numbers is: ${average}`);
+
+//? ************by muratozkan***********
